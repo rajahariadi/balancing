@@ -4,10 +4,6 @@
 session_start();
 $pesan = "";
 
-if(isset($_SESSION['login'])){
-    header('location:home-admin.php');
-}
-
 if(isset($_POST['login'])){
     $userForm = $_POST['username'];
     $passForm = $_POST['password'];
